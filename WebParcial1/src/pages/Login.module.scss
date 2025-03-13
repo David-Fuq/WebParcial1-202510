@@ -1,0 +1,49 @@
+.footer {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  min-height: 100vh; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap; 
+}
+
+.col1 {
+  flex: 0 0 60%; 
+  background-color: beige;
+  min-height: 100vh; 
+}
+
+.col2 {
+  flex: 0 0 40%; 
+  background-color: rgb(7, 46, 63);
+  min-height: 100vh; 
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+.title {
+  color: blue;
+  font: arial;
+}
+
+.inside {
+  color: orange;
+  font: arial;
+}
+
+.tinyImage {
+  width: 100px; 
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
