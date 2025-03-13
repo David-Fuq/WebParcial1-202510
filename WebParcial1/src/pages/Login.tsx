@@ -32,13 +32,12 @@ function Login () {
                             <Card.Body>
                                 <Form onSubmit={handleLogin}>
                                 <Form.Group>
-                                    <Form.Control type="email" required/>
+                                    <Form.Control type="email" required placeholder="Username" className={styles.roundedInput}/>
                                 </Form.Group>
                                     <Form.Group>
-                                    <Form.Label>Password</Form.Label>
-                                    <Form.Control type="password" required minLength={5} maxLength={8}/>
+                                    <Form.Control type="password" required minLength={5} maxLength={8} placeholder="password" className={styles.roundedInput} />
                                     </Form.Group>
-                                    <Button className="mt-2" type="submit">
+                                    <Button className={`mt-2 ${styles.roundedButton}`} type="submit">
                                     Login
                                     </Button>
                                 </Form>
