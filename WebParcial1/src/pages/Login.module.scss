@@ -1,82 +1,110 @@
 .footer {
-  font-size: 2rem;
-  font-weight: 700;
-  height: 100vh;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  height: 100vh !important;
 }
 
 .row {
-  display: flex;
-  flex-wrap: nowrap; 
-  height: 100vh;
+  display: flex !important;
+  flex-wrap: nowrap !important; 
+  height: 100vh !important;
 }
 
 .col1 {
-  flex: 0 0 60%; 
-  background-color: beige;
-  min-height: 100vh; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* Centers content */
-  align-items: center;  
+  flex: 0 0 60% !important; 
+  background-color: beige !important;
+  min-height: 100vh !important; 
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;  /* Centers content */
+  align-items: center !important;  
 }
 
 .col2 {
-  flex: 0 0 40%; 
-  background-color: rgb(17, 90, 50);
-  min-height: 100vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 0 0 40% !important; 
+  background-color: rgb(17, 90, 50) !important;
+  min-height: 100vh !important; 
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .photo {
-  width: 50%;
-  height: auto;
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
-  margin: auto;
+  width: 50% !important;
+  height: auto !important;
+  border-top-left-radius: 80px !important;
+  border-top-right-radius: 80px !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .title {
-  color: blue;
-  font: arial;
-  text-align: center;
+  color: #1f2d2e !important;
+  text-align: center !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 
 .inside {
-  color: orange;
-  font: arial;
-  text-align: center;
+  color: orange !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  text-align: center !important;
+}
+
+.cardLeft, .cardRight {
+  background-color: inherit !important; 
+  border: none !important; 
+  box-shadow: none !important; 
 }
 
 .tinyImage {
-  width: 100px; 
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100px !important; 
+  height: auto !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .roundedInput {
-  border-radius: 15px; 
-  width: 100%;
+  border-radius: 15px !important; 
+  width: 100% !important;
+  height: 50px !important; /* Increase input height */
+  font-size: 1.5rem !important; /* Make text inside bigger */
+  color: white !important; /* White text */
+  background-color: rgb(17, 90, 50) !important; /* Same as column background */
+  border: 2px solid white !important; /* White border */
+  padding: 10px !important;
+  text-align: center !important;
+  margin-bottom: 10px !important;
+}
+
+.roundedInput::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important; /* Light white placeholder */
+  text-align: center !important;
 }
 
 .roundedButton {
-  border-radius: 15px; 
-  width: 100%;
+  border-radius: 15px !important; 
+  width: 100% !important;
+  height: 60px !important; 
+  font-size: 1.5rem !important; 
+  font-weight: bold !important;
+  background-color: white !important; 
+  color: rgb(17, 90, 50) !important;
+  border: none !important;
+  transition: background 0.3s, color 0.3s !important;
 }
 
 .form-container {
-  width: 80%;  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 80% !important;  
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
 }

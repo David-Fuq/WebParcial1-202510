@@ -10,10 +10,10 @@ function Login () {
         navigate("/home");
     };
     return(
-        <Container className={styles.footer}>
+        <Container className={styles.footer} fluid>
             <Row className={styles.row}>
                 <Col md={8} className={styles.col1}>
-                    <Card>
+                    <Card className={styles.cardLeft}>
                         <Card.Body>
                             <Card.Img variant="top" src={toogood} className={styles.tinyImage}/>
                             <Card.Title className={styles.title}>TOO GOOD TO GO</Card.Title>
@@ -21,13 +21,13 @@ function Login () {
                             FOOD WASTING SOLUTION  
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
+                        <Card.Footer className={styles.cardLeft}>
                             <Card.Img variant="bottom" src={salad} className={styles.photo}/>
                         </Card.Footer>
                     </Card>    
                 </Col>
                 <Col md={4} className={styles.col2}>
-                    <Card>
+                    <Card className={styles.cardRight}>
                             <Card.Body>
                                 <Form onSubmit={handleLogin}>
                                 <Form.Group>
