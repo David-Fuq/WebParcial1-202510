@@ -1,6 +1,7 @@
 const en: { [key: string]: string } = {
     too_goo: "FOOD WASTING SOLUTION",
     username: "Username",
+    password: "Password",
     menu: "Menu",
     stores: "Stores",
     cart: "Cart",
