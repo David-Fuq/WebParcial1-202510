@@ -10,7 +10,6 @@ const queryClient = new QueryClient;
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-    <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login></Login>}></Route>
@@ -21,7 +20,6 @@ function App() {
           <Route path="/cart" element={<Cart></Cart>}></Route>
         </Routes>
       </BrowserRouter>
-    </div>
     </QueryClientProvider>
   )
 }

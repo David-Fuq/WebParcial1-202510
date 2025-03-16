@@ -10,8 +10,7 @@ function Login () {
         navigate("/home");
     };
     return(
-        <>
-        <Container className={styles.footer} fluid>
+        <Container className={styles.footer}>
             <Row className={styles.row}>
                 <Col md={8} className={styles.col1}>
                     <Card>
@@ -32,10 +31,10 @@ function Login () {
                             <Card.Body>
                                 <Form onSubmit={handleLogin}>
                                 <Form.Group>
-                                    <Form.Control type="email" required placeholder="Username" className={styles.roundedInput}/>
+                                    <Form.Control type="text" required placeholder="Username" className={styles.roundedInput}/>
                                 </Form.Group>
                                     <Form.Group>
-                                    <Form.Control type="password" required minLength={5} maxLength={8} placeholder="password" className={styles.roundedInput} />
+                                    <Form.Control type="password" required minLength={5} maxLength={8} placeholder="Password" className={styles.roundedInput} />
                                     </Form.Group>
                                     <Button className={`mt-2 ${styles.roundedButton}`} type="submit">
                                     Login
@@ -46,7 +45,6 @@ function Login () {
                 </Col>
             </Row>
         </Container>
-        </>
     );
 };
 
