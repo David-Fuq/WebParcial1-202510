@@ -4,6 +4,7 @@ import { Container, Navbar, Carousel, Row, Col, Card } from "react-bootstrap";
 import menu from "../assets/menu.svg";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
+import { FormattedMessage } from "react-intl";
 
 interface ApiData{
     image: string;
@@ -35,7 +36,7 @@ function Menu () {
             fontWeight: "bold",
           }}>
         <img src={menu} alt="Stores" className={styles.icon}/>
-            Menu
+        <FormattedMessage id="MENU"/>
         <img src={menu} alt="Stores" className={styles.icon}/>
         </Navbar.Brand>
       </Navbar>

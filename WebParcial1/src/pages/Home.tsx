@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import menu from "../assets/menu.svg";
 import stores from "../assets/stores.svg";
 import cart from "../assets/cart.svg";
+import { FormattedMessage, useIntl } from "react-intl";
 
 
 
@@ -27,15 +28,15 @@ function Home () {
                     <Row className="w-100 d-flex justify-content-between text-center">
                                 <Col>
                                     <img src={menu} alt="Menu" className={styles.icon} onClick={handleMenu}/>
-                                    <p className={styles.icon_text}>Menu</p>
+                                    <p className={styles.icon_text}><FormattedMessage id="menu"/></p>
                                 </Col>
                                 <Col>
                                     <img src={stores} alt="Stores" className={styles.icon} onClick={handleStores} />
-                                    <p className={styles.icon_text}>Stores</p>
+                                    <p className={styles.icon_text}><FormattedMessage id="stores"/></p>
                                 </Col>
                                 <Col>
                                     <img src={cart} alt="Cart" className={styles.icon} onClick={handleCart}/>
-                                    <p className={styles.icon_text}>Cart</p>
+                                    <p className={styles.icon_text}><FormattedMessage id="cart"/></p>
                                 </Col>
                             </Row>
                         </Card.Body>

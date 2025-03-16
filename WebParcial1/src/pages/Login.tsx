@@ -1,14 +1,19 @@
 import styles from "./Login.module.scss";
 import { Button, Card, Col, Container, Row, Form } from "react-bootstrap";
 import { useNavigate } from "react-router";
-import salad from '../assets/salad.jpg'
-import toogood from '../assets/too-good.svg'
+import salad from '../assets/salad.jpg';
+import toogood from '../assets/too-good.svg';
+import { FormattedMessage, useIntl } from "react-intl";
 
 function Login () {
+    const intl = useIntl();
     const navigate = useNavigate();
     const handleLogin = () => {
         navigate("/home");
     };
+    const userPlaceholder = intl.formatMessage({ id: "username" });
+    const passPlaceholder = intl.formatMessage({ id: "password" });
+
     return(
         <Container className={styles.footer} fluid>
             <Row className={styles.row}>
@@ -18,7 +23,7 @@ function Login () {
                             <Card.Img variant="top" src={toogood} className={styles.tinyImage}/>
                             <Card.Title className={styles.title}>TOO GOOD TO GO</Card.Title>
                             <Card.Text className={styles.inside}>
-                            FOOD WASTING SOLUTION  
+                            <FormattedMessage id="too_goo"/>  
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer className={styles.cardLeft}>
@@ -31,13 +36,13 @@ function Login () {
                             <Card.Body>
                                 <Form onSubmit={handleLogin}>
                                 <Form.Group>
-                                    <Form.Control type="text" required placeholder="Username" className={styles.roundedInput}/>
+                                    <Form.Control type="text" required placeholder={userPlaceholder} className={styles.roundedInput}/>
                                 </Form.Group>
                                     <Form.Group>
-                                    <Form.Control type="password" required minLength={5} maxLength={8} placeholder="Password" className={styles.roundedInput} />
+                                    <Form.Control type="password" required minLength={5} maxLength={8} placeholder={passPlaceholder} className={styles.roundedInput} />
                                     </Form.Group>
                                     <Button className={`mt-2 ${styles.roundedButton}`} type="submit">
-                                    Login
+                                    <FormattedMessage id="login"/>  
                                     </Button>
                                 </Form>
                             </Card.Body>
