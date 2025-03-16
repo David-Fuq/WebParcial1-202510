@@ -1,0 +1,19 @@
+.icon {
+    width: 200px; 
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.img {
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+.custom_card_title {
+    background-color: rgb(16, 99, 114) !important; /* Matches Navbar */
+    color: white !important; /* Makes text white */
+    padding: 10px; /* Adds padding for better spacing */
+    border-radius: 0 0 8px 8px; /* Optional: Rounds bottom corners */
+  }
